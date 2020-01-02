@@ -4,9 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Understanding TypeScript</title>
+  <title>Google Maps App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="app.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY" async
+          defer></script>
   <script src="dist/bundle.js" defer></script>
 </head>
 <body>
+<div class="container">
+  <form>
+    <div class="row center">
+      <div class="col-md-7">
+        <div class="form-group">
+          <input class="form-control " type="text" id="address">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <button class="btn btn-primary" type="submit">SEARCH ADDRESS</button>
+      </div>
+    </div>
+  </form>
+  <div id="map">
+    <p>Please, enter an address!</p>
+  </div>
+</div>
+
 </body>
 </html>
